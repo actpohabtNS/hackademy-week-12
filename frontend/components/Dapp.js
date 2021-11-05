@@ -345,9 +345,6 @@ export default class Dapp extends React.Component {
         value: ethers.utils.parseEther("" + amount / this.state.tokenData.price)
       })
 
-      console.log(this._token.address);
-      console.log("" + amount / this.state.tokenData.price);
-
       this.setState({ txBeingSent: tx.hash });
 
       // We use .wait() to wait for the transaction to be mined. This method

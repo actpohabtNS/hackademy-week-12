@@ -187,6 +187,11 @@
       "address": "0x306173CD9617D133b383E294B0A2746aBD19Dbb8",
       "txHash": "0xbad9a6f9691556c137f50c157aaf554ff7d9db45960489af98a834ce1efa40f0",
       "kind": "transparent"
+    },
+    {
+      "address": "0x46C8414356ab41D1BCAB3cf3Ac47F4C4aCAE2d95",
+      "txHash": "0x0e2ff064c8247bc512ca594146d0bbf8a5c6c55d0ea28831389b9e0a73368680",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -902,6 +907,112 @@
             "label": "owh",
             "type": "t_address",
             "src": "contracts\\Token.sol:13"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "94d2cf0b878a0b02fb5766ebb792696731d1bce14d1a19a919d1471964c6d19b": {
+      "address": "0xE2530B3E909c58f76F8cC31ef3dE44a48638A9D4",
+      "txHash": "0x083cb851cf200b230b7ad8af80c09655661a777e5b92222b66062c4367d81117",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:26"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:30"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:36"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:38"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:40"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:42"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:361"
+          },
+          {
+            "contract": "Token",
+            "label": "tokensPerETH",
+            "type": "t_uint256",
+            "src": "contracts\\Token.sol:10"
+          },
+          {
+            "contract": "Token",
+            "label": "owner",
+            "type": "t_address",
+            "src": "contracts\\Token.sol:11"
+          },
+          {
+            "contract": "Token",
+            "label": "owh",
+            "type": "t_address",
+            "src": "contracts\\Token.sol:12"
           }
         ],
         "types": {
