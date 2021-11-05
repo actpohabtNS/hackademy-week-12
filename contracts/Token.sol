@@ -30,7 +30,7 @@ contract Token is ERC20Upgradeable {
   }
 
   receive() external payable {
-    _mint(msg.sender, msg.value * tokensPerETH);
+    _mint(msg.sender, msg.value * tokensPerETH / 1 ether);
     emit BuyToken(msg.sender, msg.value * tokensPerETH, tokensPerETH);
   }
 }
