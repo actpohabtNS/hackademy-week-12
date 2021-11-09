@@ -113,11 +113,11 @@ export default class Dapp extends React.Component {
 
         <div className="row">
           <div className="col-12">
-            {this.state.tokenBalance.eq(0) && (
-              <NoTokensMessage selectedAddress={this.state.selectedAddress} />
+            {this.state.balance === "0.0" && (
+              <NoTokensMessage tokenSymbol={this.state.tokenData.symbol} />
             )}
 
-            {this.state.tokenBalance.gt(0) && (
+            {this.state.balance !== "0.0" && (
               <BuyTokens
                 buyToken={(amount) =>
                   this._buyToken(amount)
