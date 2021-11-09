@@ -1,14 +1,16 @@
 import React from "react";
 
-export function NoTokensMessage({ selectedAddress }) {
+export function NoTokensMessage({ tokenSymbol }) {
   return (
     <>
-      <p>You don't have tokens to transfer</p>
+      <h4>Buy Tokens ({tokenSymbol})</h4>
+      <p>You don't have currency to buy tokens</p>
       <p>
-        To get some tokens, open a terminal in the root of the repository and run: 
+        To get some tokens, go to corresponding faucet and get currency: 
         <br />
+        <span>ETH: </span><a href="https://faucet.ropsten.be/">https://faucet.ropsten.be/</a>
         <br />
-        <code>npx hardhat --network localhost faucet {selectedAddress}</code>
+        <span>BNB: </span><a href="https://testnet.binance.org/faucet-smart">https://testnet.binance.org/faucet-smart</a>
       </p>
     </>
   );
